@@ -1,4 +1,4 @@
-import 'package:chat_app_waleed/core/home/home_view.dart';
+import 'package:chat_app_waleed/core/splash/splash_view.dart';
 import 'package:chat_app_waleed/themes/dark_theme.dart';
 import 'package:chat_app_waleed/themes/light_theme.dart';
 import 'package:flutter/material.dart';
@@ -17,8 +17,8 @@ class MyApp extends StatelessWidget {
       title: 'Flutter Demo',
       theme: lightTheme,
       darkTheme: darkTheme,
-      themeMode: ThemeMode.system,
-      home: const HomeView(),
+      themeMode: ThemeMode.dark,
+      home: const SplashView(),
     );
   }
 }
