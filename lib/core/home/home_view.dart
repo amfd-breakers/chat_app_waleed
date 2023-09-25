@@ -1,4 +1,4 @@
-import 'package:chat_app_waleed/core/splash/splash_view.dart';
+import 'package:chat_app_waleed/core/auth/social_login_view.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -10,7 +10,7 @@ class HomeView extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: GestureDetector(
-          onTap: () => Get.to(() => const SplashView()),
+          onTap: () => Get.to(() => const SocialLoginView()),
           child: const Text('Textit'),
         ),
       ),

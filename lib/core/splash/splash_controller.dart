@@ -1,4 +1,5 @@
 import 'package:chat_app_waleed/core/home/home_view.dart';
+import 'package:chat_app_waleed/utils/utils.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
@@ -7,11 +8,7 @@ class SplashController extends GetxController {
   @override
   void onReady() {
     super.onReady();
-    SystemChrome.setSystemUIOverlayStyle(
-      SystemUiOverlayStyle(
-        systemNavigationBarColor: Theme.of(Get.context!).primaryColor,
-      ),
-    );
+    updateNavigationColor(isPrimary: true);
     Future.delayed(const Duration(seconds: 3)).then(
       (value) => Get.offAll(
         () => const HomeView(),
@@ -21,12 +18,7 @@ class SplashController extends GetxController {
 
   @override
   void onClose() {
-    SystemChrome.setSystemUIOverlayStyle(
-      SystemUiOverlayStyle(
-        systemNavigationBarColor:
-            Theme.of(Get.context!).scaffoldBackgroundColor,
-      ),
-    );
+    updateNavigationColor(isPrimary: false);
     super.onClose();
   }
 }
