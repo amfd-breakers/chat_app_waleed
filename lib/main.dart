@@ -2,11 +2,14 @@ import 'package:chat_app_waleed/core/auth/sign_up_view.dart';
 import 'package:chat_app_waleed/core/splash/splash_view.dart';
 import 'package:chat_app_waleed/themes/dark_theme.dart';
 import 'package:chat_app_waleed/themes/light_theme.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:get/get.dart';
 
-void main() {
+Future<void> main() async {
+  WidgetsFlutterBinding.ensureInitialized();
+  await Firebase.initializeApp();
   runApp(const MyApp());
 }
 

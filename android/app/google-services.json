@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "267072545795",
+    "project_id": "chat-app-bb77b",
+    "storage_bucket": "chat-app-bb77b.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:267072545795:android:52f05aa5a90c2d9fd79a36",
+        "android_client_info": {
+          "package_name": "com.example.chat_app_waleed"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBEW7XaNMow2SBVgj-egwH3gW8mO2eQ9GE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
