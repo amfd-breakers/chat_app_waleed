@@ -1,7 +1,5 @@
 import 'package:chat_app_waleed/constants/ui_constants.dart';
 import 'package:chat_app_waleed/core/auth/auth_controller.dart';
-import 'package:chat_app_waleed/core/auth/sign_up_view.dart';
-import 'package:chat_app_waleed/utils/utils.dart';
 import 'package:chat_app_waleed/utils/validators.dart';
 import 'package:chat_app_waleed/widgets/primary_button.dart';
 import 'package:chat_app_waleed/widgets/seperator.dart';

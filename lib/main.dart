@@ -1,4 +1,3 @@
-import 'package:chat_app_waleed/core/auth/sign_up_view.dart';
 import 'package:chat_app_waleed/core/splash/splash_view.dart';
 import 'package:chat_app_waleed/themes/dark_theme.dart';
 import 'package:chat_app_waleed/themes/light_theme.dart';

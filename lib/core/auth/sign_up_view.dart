@@ -130,15 +130,18 @@ class SignUpView extends StatelessWidget {
                     ],
                   ),
                 ),
-                PrimaryButton(
-                  onTap: controller.signUp,
-                  child: Text(
-                    'Create a account',
-                    style: Theme.of(context).textTheme.bodyLarge?.copyWith(
-                          color: Colors.white,
-                        ),
-                  ),
-                ),
+                Obx(() {
+                  return PrimaryButton(
+                    onTap: controller.signUp,
+                    isLoading: controller.isSingingUp.value,
+                    child: Text(
+                      'Create a account',
+                      style: Theme.of(context).textTheme.bodyLarge?.copyWith(
+                            color: Colors.white,
+                          ),
+                    ),
+                  );
+                }),
               ],
             ),
           );
